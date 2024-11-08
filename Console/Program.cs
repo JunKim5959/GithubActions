@@ -78,7 +78,7 @@ namespace GithubActionsLab
         }
         public static double Divide(string x, string y)
         {
-            return double.Parse(x) / double.Parse(y);
+            return double.Parse(x) + double.Parse(y);
         }
 
         // Implement this method following a similar pattern as above
