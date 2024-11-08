@@ -34,7 +34,7 @@ namespace GithubActionsLab
         public void PowerTestKim()
         {
             double result = Program.Power("2", "3");
-            Assert.AreEqual(8, result);
+            Assert.AreEqual(6, result);
         }
 
         [Test]
