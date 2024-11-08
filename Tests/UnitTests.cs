@@ -30,6 +30,33 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, null));
         }
 
+        [Test]
+        public void PowerTestKim()
+        {
+            double result = Program.Power("2", "3");
+            Assert.AreEqual(8, result);
+        }
+
+        [Test]
+        public void SubtractTestKim()
+        {
+            Assert.AreEqual(1, Program.Subtract("3", "2"));
+            Assert.AreEqual(-1, Program.Subtract("2", "3"));
+            Assert.AreEqual(0, Program.Subtract("5", "5"));
+        }
+         [Test]
+        public void MultyplyTestKim()
+        {
+            Assert.AreEqual(6, Program.Multiply("3", "2"));
+            Assert.AreEqual(0, Program.Multiply("2", "0"));
+            Assert.AreEqual(-15, Program.Multiply("-3", "5"));
+        }
+         [Test]
+        public void DivideTestKim()
+        {
+            Assert.AreEqual(2, Program.Divide("6", "3"));
+            Assert.AreEqual(1.5, Program.Divide("3", "2"));
+        }
         // Implement 3 tests per operation, following a similar pattern as above
     }
 }
